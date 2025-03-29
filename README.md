@@ -1,54 +1,20 @@
-# React + TypeScript + Vite
+# Multi-Step Form with React
+Este é meu primeiro projeto de estudo em React :) 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Resolvi criar um formulário multi-step desenvolvido em React com TypeScript que coleta informações do usuário em três etapas distintas:
 
-Currently, two official plugins are available:
+- Dados Pessoais (Nome, Sobrenome, Idade)
+- Endereço (Rua, Cidade, Estado, CEP)
+- Conta (Email, Senha)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## ✨ Funcionalidades Principais
+- Navegação entre passos com botões "Back" e "Next"
+- Progresso visual mostrando o passo atual/total
+- Validação de formulário em cada etapa
+- Tela de conclusão ao finalizar o processo
+- Design responsivo e consistente em todas as etapas
+- Persistência de dados entre os passos
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Demonstração 
+Para testar as funcionalidades do formulário acesse: https://multistep-form-nine-blue.vercel.app
